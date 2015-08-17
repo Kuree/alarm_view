@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Alarm Clock Simulator - {{filename}}</title>
+  </head>
+  <body>
+  
+	      <h1>{{filename}}</h1>
+	      
+	      <p><pre>At line {{lineno}}/{{totallines}}: {{data}}</pre></p>
+	      	      	  
+	      	      	  
+	      <p>
+	      <h3>Timestamp: {{ts}}</h3>
+	      <h3>Alarm: {{alarm}}</h3>
+	      <h3>Buzzer: {{buz}}</h3>
+	      
+	      <br>
+	      
+	      {% for dig in digits %}
+	      	<img src="/static/{{dig}}.png">
+	      {% endfor %}
+	      
+	      <br>
+	      
+	      <p>
+	      <h4>Navigation:</h4>
+	      <a href="/"><img src="/static/Home-26.png"></a>
+	      <a href="/show/{{filename}}/{{prevline}}"><img src="/static/Back-25.png"></a>
+	      <a href="/show/{{filename}}/{{nextline}}"><img src="/static/Forward-25.png"></a>
+	  	  </p>
+  </body>
+</html>

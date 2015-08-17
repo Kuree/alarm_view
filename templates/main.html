@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Alarm Clock Simulator - File Browser</title>
+  </head>
+  <body>
+  
+	      <h1>Select the file:</h1>
+	      <ul>
+	      	{% for filename in files %}
+	      	  <li><a href="/show/{{filename}}">{{filename}}</a></li>	      	  
+	      	{% else %}
+	      	  <h2>Error: no files, check FILE_PATH.</h2>
+	      	{% endfor %}
+	      </ul>
+	  
+  </body>
+</html>
