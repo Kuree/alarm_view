@@ -46,7 +46,7 @@ app.config.from_object(__name__)
 @app.route("/")
 def main():
     logging.debug("access to main!")
-    files = os.listdir(path = FILE_PATH)
+    files = os.listdir(FILE_PATH)
     logging.debug("Showing files: " + str (files))
     return render_template('main.html',
                            files = files)
