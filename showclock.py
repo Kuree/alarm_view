@@ -22,7 +22,7 @@ Each line is fixed width:
 
 Sample traces are in the /examples folder.
 
-Images were generated with the makedigits.py script and are stored in 
+Images were generated with the makedigits.py script and are stored in
 the /static folder.
 
 HTML templates (Jinja2) are in the templates folder.
@@ -48,17 +48,17 @@ def main():
     logging.debug("access to main!")
     files = os.listdir(path = FILE_PATH)
     logging.debug("Showing files: " + str (files))
-    return render_template('main.html', 
+    return render_template('main.html',
                            files = files)
-    
+
 @app.route("/show/<path:filename>", defaults = {'line': 1})
 @app.route("/show/<path:filename>/<int:line>")
 def show(filename, line):
     local_filename = os.path.join(FILE_PATH, filename)
-    # on a real server, cache this. 
+    # on a real server, cache this.
     with open (local_filename, 'r') as f:
         data = f.read().strip().split('\n')
-    
+
     if line == 1:
         prevline = len(data)
     else:
@@ -66,17 +66,17 @@ def show(filename, line):
     if line == len(data):
         nextline = 1
     else:
-        nextline = line + 1     
-    
-    # convert line from 1-based to 0-based on access. 
+        nextline = line + 1
+
+    # convert line from 1-based to 0-based on access.
     p = data[line - 1].strip().split()
     # parse timestamp as base 10 (default)
     ts = int(p[0])
-    
-    # parse remaining arguments 
+
+    # parse remaining arguments
     alarm, buz = map(lambda x: int(x, 2), p[1:3])
     digits = p[3:]
-        
+
     return render_template("show.html",
                            filename = filename,
                            lineno = line,
@@ -86,8 +86,8 @@ def show(filename, line):
                            ts = ts,
                            alarm = alarm,
                            buz = buz,
-                           digits = digits, 
+                           digits = digits,
                            data = p)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
