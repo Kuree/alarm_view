@@ -75,7 +75,11 @@ def show(filename, line):
 
     # parse remaining arguments
     alarm, buz = map(lambda x: int(x, 2), p[1:3])
-    digits = p[3:]
+    digits = p[3:7]
+    if len(p) > 7:
+      isAM = p[7]
+    else:
+      isAM = -1
 
     return render_template("show.html",
                            filename = filename,
@@ -87,6 +91,7 @@ def show(filename, line):
                            alarm = alarm,
                            buz = buz,
                            digits = digits,
+                           isAM = int(isAM),
                            data = p)
 
 if __name__ == "__main__":

@@ -12,6 +12,11 @@
 	      <p>
 	      <h3>Timestamp: {{ts}}</h3>
 	      <h3>Alarm: {{alarm}}</h3>
+        {% if alarm == 0%}
+          <h3>Alarm is: On</h3>
+        {% else %}
+          <h3>Alarm is: Off</h3>
+        {% endif %}
 	      <h3>Buzzer: {{buz}}</h3>
 	      
 	      <br>
@@ -19,6 +24,12 @@
 	      {% for dig in digits %}
 	      	<img src="/static/{{dig}}.png">
 	      {% endfor %}
+        
+        {% if isAM == 1 %}
+          <img src="/static/0001000.png">
+        {% elif isAM == 0 %}
+          <img src="/static/0011000.png">
+        {% endif %}
 	      
 	      <br>
 	      
