@@ -72,5 +72,5 @@ In additional to displaying the current time, you can also display additional in
                    0 0 0 0000000 0000000 0000000 0000000 0 0 0 0 0
 ```
 
-Note that all the buttons are active-low, meaning that 1 stands button off and 0 stands for button on. 
+Note that all the buttons are active-low, meaning that 1 stands for button off and 0 stands for button on. 
 If you want to enable this feature, you need to have all the additional bits present in your input file. If you don't want to include certain buttons, just use -1 for that bit. For example, if you don't want to have the "isAM" indicator, change that bit to -1(technically -1 is not 1 bit anymore, but it doesn't matter because the web interface doens't care). 
