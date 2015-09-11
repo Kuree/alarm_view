@@ -77,12 +77,14 @@ def show(filename, line):
     alarm, buz = map(lambda x: int(x, 2), p[1:3])
     digits = p[3:7]
     if len(p) > 7:
+      additionFeatures = True
       isAM = p[7]
       plus = p[8]
       minus = p[9]
       alarmEnabled = p[10]
       turnOffAlarm = p[11]
     else:
+      additionFeatures = False
       isAM = -1
       plus = -1
       minus = -1
@@ -100,6 +102,7 @@ def show(filename, line):
                            alarm = alarm,
                            buz = buz,
                            digits = digits,
+                           additionFeatures = additionFeatures,
                            isAM = int(isAM),
                            plus = int(plus), 
                            minus = int(minus),
