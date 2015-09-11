@@ -56,6 +56,21 @@ At the top the current file, line, timestamp, alarm state, and buzzer state is s
 
 Below the display are navigation icons. The house takes you back to the list of output files. The left and right arrows move to the previous/next timestep respectively. Moving to an arbitrary line is possible by modifying the url directly. The format is: `http://localhost:5000/show/<filename>/<line_number>`.
 
+### Additional Features:
+In additional to displaying the current time, you can also display additional information by passing in more data to the input file. Here is the format for each line in the input file, if you want to enable this feature:
 
+```                                                         
+                                                           minus
+              BUZZER                                  plus   |
+             ---------\                               -----\ |  alarmButton
+                       \                                   | | /---
+               ALARM   |                            isAM   | | |
+            ---------\ |                            -----\ | | |  alarmOff
+                     | |                                 | | | | /-------
+           timestamp | |    Led1    Led2    Led3    Led4 | | | | |
+|-------- 21 ------| | | |--7--| |--7--| |--7--| |--7--| | | | | |
+                   0 0 0 0000000 0000000 0000000 0000000 0 0 0 0 0
+```
 
-
+Note that all the buttons are active-low, meaning that 1 stands button off and 0 stands for button on. 
+If you want to enable this feature, you need to have all the additional bits present in your input file. If you don't want to include certain buttons, just use -1 for that bit. For example, if you don't want to have the "isAM" indicator, change that bit to -1(technically -1 is not 1 bit anymore, but it doesn't matter because the web interface doens't care). 
