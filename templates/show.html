@@ -12,13 +12,65 @@
 	      <p>
 	      <h3>Timestamp: {{ts}}</h3>
 	      <h3>Alarm: {{alarm}}</h3>
-	      <h3>Buzzer: {{buz}}</h3>
+
+        {% if additionFeatures==True %}
+          {% if alarm == 0%}
+            <h3>Alarm is: On</h3>
+          {% else %}
+            <h3>Alarm is: Off</h3>
+          {% endif %}
+          <h3>Buzzer: {{buz}}</h3>
+          <h3>Buttons:</h3>
+          <p>
+          Plus Button: 
+          {% if plus == 0%} 
+            On
+          {% elif plus == 1%}
+            Off
+          {% endif %}
+          ;
+          Minus Button: 
+          {% if minus == 0%} 
+            On
+          {% elif minus == 1%}
+            Off
+          {% endif %}
+          ;
+          Minus Button: 
+          {% if minus == 0%} 
+            On
+          {% elif minus == 1%}
+            Off
+          {% endif %}
+          ;
+          Alarm Button: 
+          {% if alarmEnabled == 0%} 
+            On
+          {% elif alarmEnabled == 1%}
+            Off
+          {% endif %}
+          ;
+          Alarm Off Button: 
+          {% if turnOffAlarm == 0%} 
+            On
+          {% elif turnOffAlarm  == 1%}
+            Off
+          {% endif %}
+          ;
+          </p>
+        {% endif %}
 	      
 	      <br>
 	      
 	      {% for dig in digits %}
 	      	<img src="/static/{{dig}}.png">
 	      {% endfor %}
+        
+        {% if isAM == 1 %}
+          <img src="/static/0001000.png" height = "200">
+        {% elif isAM == 0 %}
+          <img src="/static/0011000.png" height = "200">
+        {% endif %}
 	      
 	      <br>
 	      
