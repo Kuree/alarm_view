@@ -78,8 +78,17 @@ def show(filename, line):
     digits = p[3:7]
     if len(p) > 7:
       isAM = p[7]
+      plus = p[8]
+      minus = p[9]
+      alarmEnabled = p[10]
+      turnOffAlarm = p[11]
     else:
       isAM = -1
+      plus = -1
+      minus = -1
+      alarmEnabled = -1
+      turnOffAlarm = -1
+
 
     return render_template("show.html",
                            filename = filename,
@@ -92,6 +101,10 @@ def show(filename, line):
                            buz = buz,
                            digits = digits,
                            isAM = int(isAM),
+                           plus = int(plus), 
+                           minus = int(minus),
+                           alarmEnabled = int(alarmEnabled),
+                           turnOffAlarm = int(turnOffAlarm),
                            data = p)
 
 if __name__ == "__main__":

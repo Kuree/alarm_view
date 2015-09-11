@@ -18,6 +18,44 @@
           <h3>Alarm is: Off</h3>
         {% endif %}
 	      <h3>Buzzer: {{buz}}</h3>
+        <h3>Buttons:</h3>
+        <p>
+        Plus Button: 
+        {% if plus == 0%} 
+          On
+        {% elif plus == 1%}
+          Off
+        {% endif %}
+        ;
+        Minus Button: 
+        {% if minus == 0%} 
+          On
+        {% elif minus == 1%}
+          Off
+        {% endif %}
+        ;
+        Minus Button: 
+        {% if minus == 0%} 
+          On
+        {% elif minus == 1%}
+          Off
+        {% endif %}
+        ;
+        Alarm Button: 
+        {% if alarmEnabled == 0%} 
+          On
+        {% elif alarmEnabled == 1%}
+          Off
+        {% endif %}
+        ;
+        Alarm Off Button: 
+        {% if turnOffAlarm == 0%} 
+          On
+        {% elif turnOffAlarm  == 1%}
+          Off
+        {% endif %}
+        ;
+        </p>
 	      
 	      <br>
 	      
