@@ -1,6 +1,26 @@
 <html>
   <head>
     <title>Alarm Clock Simulator - {{filename}}</title>
+    <script>
+        document.onkeydown = function(event) {
+             if (!event)
+                  event = window.event;
+             var code = event.keyCode;
+             if (event.charCode && code == 0)
+                  code = event.charCode;
+             switch(code) {
+                  case 37:
+                      // Key left.
+                      window.location.href = '/show/{{filename}}/{{prevline}}';
+                      break;
+                  case 39:
+                      // Key right.
+                      window.location.href = '/show/{{filename}}/{{nextline}}'
+                      break;
+             }
+             event.preventDefault();
+        };
+    </script>
   </head>
   <body>
   
