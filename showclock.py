@@ -32,11 +32,14 @@ HTML templates (Jinja2) are in the templates folder.
 from flask import Flask, render_template
 import os.path
 import logging
+import os
+import argparse
 
 logging.basicConfig(level = logging.DEBUG)
 DEBUG = True
 SECRET_KEY = 'not very secret'
-FILE_PATH = './examples'
+WORKING_FOLDER = os.path.dirname(os.path.realpath(__file__))
+FILE_PATH = os.path.join(WORKING_FOLDER, './examples')
 static_folder = 'static'
 static_url_path = 'static'
 
@@ -78,11 +81,11 @@ def show(filename, line):
     digits = p[3:7]
     if len(p) > 7:
       additionFeatures = True
-      isAM = p[7]
-      plus = p[8]
-      minus = p[9]
-      alarmEnabled = p[10]
-      turnOffAlarm = p[11]
+      isAM = p[7] if p[7].isdigit() else -1
+      plus = p[8] if p[8].isdigit() else -1
+      minus = p[9] if p[9].isdigit() else -1
+      alarmEnabled = p[10] if p[10].isdigit() else -1
+      turnOffAlarm = p[11] if p[11].isdigit() else -1
     else:
       additionFeatures = False
       isAM = -1
@@ -111,4 +114,7 @@ def show(filename, line):
                            data = p)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "-port", dest="port", type=int, help="port number", default=5000)
+    arg = parser.parse_args()
+    app.run(host='0.0.0.0', port=arg.port)
