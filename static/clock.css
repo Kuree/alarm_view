@@ -1,0 +1,829 @@
+#clock .digits div.d0000001 .d7{
+opacity:0;
+}
+
+#clock .digits div.d0000010 .d6{
+opacity:0;
+}
+
+#clock .digits div.d0000011 .d7,
+#clock .digits div.d0000011 .d6{
+opacity:0;
+}
+
+#clock .digits div.d0000100 .d5{
+opacity:0;
+}
+
+#clock .digits div.d0000101 .d7,
+#clock .digits div.d0000101 .d5{
+opacity:0;
+}
+
+#clock .digits div.d0000110 .d6,
+#clock .digits div.d0000110 .d5{
+opacity:0;
+}
+
+#clock .digits div.d0000111 .d7,
+#clock .digits div.d0000111 .d6,
+#clock .digits div.d0000111 .d5{
+opacity:0;
+}
+
+#clock .digits div.d0001000 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001001 .d7,
+#clock .digits div.d0001001 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001010 .d6,
+#clock .digits div.d0001010 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001011 .d7,
+#clock .digits div.d0001011 .d6,
+#clock .digits div.d0001011 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001100 .d5,
+#clock .digits div.d0001100 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001101 .d7,
+#clock .digits div.d0001101 .d5,
+#clock .digits div.d0001101 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001110 .d6,
+#clock .digits div.d0001110 .d5,
+#clock .digits div.d0001110 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0001111 .d7,
+#clock .digits div.d0001111 .d6,
+#clock .digits div.d0001111 .d5,
+#clock .digits div.d0001111 .d4{
+opacity:0;
+}
+
+#clock .digits div.d0010000 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010001 .d7,
+#clock .digits div.d0010001 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010010 .d6,
+#clock .digits div.d0010010 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010011 .d7,
+#clock .digits div.d0010011 .d6,
+#clock .digits div.d0010011 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010100 .d5,
+#clock .digits div.d0010100 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010101 .d7,
+#clock .digits div.d0010101 .d5,
+#clock .digits div.d0010101 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010110 .d6,
+#clock .digits div.d0010110 .d5,
+#clock .digits div.d0010110 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0010111 .d7,
+#clock .digits div.d0010111 .d6,
+#clock .digits div.d0010111 .d5,
+#clock .digits div.d0010111 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011000 .d4,
+#clock .digits div.d0011000 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011001 .d7,
+#clock .digits div.d0011001 .d4,
+#clock .digits div.d0011001 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011010 .d6,
+#clock .digits div.d0011010 .d4,
+#clock .digits div.d0011010 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011011 .d7,
+#clock .digits div.d0011011 .d6,
+#clock .digits div.d0011011 .d4,
+#clock .digits div.d0011011 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011100 .d5,
+#clock .digits div.d0011100 .d4,
+#clock .digits div.d0011100 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011101 .d7,
+#clock .digits div.d0011101 .d5,
+#clock .digits div.d0011101 .d4,
+#clock .digits div.d0011101 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011110 .d6,
+#clock .digits div.d0011110 .d5,
+#clock .digits div.d0011110 .d4,
+#clock .digits div.d0011110 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0011111 .d7,
+#clock .digits div.d0011111 .d6,
+#clock .digits div.d0011111 .d5,
+#clock .digits div.d0011111 .d4,
+#clock .digits div.d0011111 .d3{
+opacity:0;
+}
+
+#clock .digits div.d0100000 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100001 .d7,
+#clock .digits div.d0100001 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100010 .d6,
+#clock .digits div.d0100010 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100011 .d7,
+#clock .digits div.d0100011 .d6,
+#clock .digits div.d0100011 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100100 .d5,
+#clock .digits div.d0100100 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100101 .d7,
+#clock .digits div.d0100101 .d5,
+#clock .digits div.d0100101 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100110 .d6,
+#clock .digits div.d0100110 .d5,
+#clock .digits div.d0100110 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0100111 .d7,
+#clock .digits div.d0100111 .d6,
+#clock .digits div.d0100111 .d5,
+#clock .digits div.d0100111 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101000 .d4,
+#clock .digits div.d0101000 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101001 .d7,
+#clock .digits div.d0101001 .d4,
+#clock .digits div.d0101001 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101010 .d6,
+#clock .digits div.d0101010 .d4,
+#clock .digits div.d0101010 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101011 .d7,
+#clock .digits div.d0101011 .d6,
+#clock .digits div.d0101011 .d4,
+#clock .digits div.d0101011 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101100 .d5,
+#clock .digits div.d0101100 .d4,
+#clock .digits div.d0101100 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101101 .d7,
+#clock .digits div.d0101101 .d5,
+#clock .digits div.d0101101 .d4,
+#clock .digits div.d0101101 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101110 .d6,
+#clock .digits div.d0101110 .d5,
+#clock .digits div.d0101110 .d4,
+#clock .digits div.d0101110 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0101111 .d7,
+#clock .digits div.d0101111 .d6,
+#clock .digits div.d0101111 .d5,
+#clock .digits div.d0101111 .d4,
+#clock .digits div.d0101111 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110000 .d3,
+#clock .digits div.d0110000 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110001 .d7,
+#clock .digits div.d0110001 .d3,
+#clock .digits div.d0110001 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110010 .d6,
+#clock .digits div.d0110010 .d3,
+#clock .digits div.d0110010 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110011 .d7,
+#clock .digits div.d0110011 .d6,
+#clock .digits div.d0110011 .d3,
+#clock .digits div.d0110011 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110100 .d5,
+#clock .digits div.d0110100 .d3,
+#clock .digits div.d0110100 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110101 .d7,
+#clock .digits div.d0110101 .d5,
+#clock .digits div.d0110101 .d3,
+#clock .digits div.d0110101 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110110 .d6,
+#clock .digits div.d0110110 .d5,
+#clock .digits div.d0110110 .d3,
+#clock .digits div.d0110110 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0110111 .d7,
+#clock .digits div.d0110111 .d6,
+#clock .digits div.d0110111 .d5,
+#clock .digits div.d0110111 .d3,
+#clock .digits div.d0110111 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111000 .d4,
+#clock .digits div.d0111000 .d3,
+#clock .digits div.d0111000 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111001 .d7,
+#clock .digits div.d0111001 .d4,
+#clock .digits div.d0111001 .d3,
+#clock .digits div.d0111001 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111010 .d6,
+#clock .digits div.d0111010 .d4,
+#clock .digits div.d0111010 .d3,
+#clock .digits div.d0111010 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111011 .d7,
+#clock .digits div.d0111011 .d6,
+#clock .digits div.d0111011 .d4,
+#clock .digits div.d0111011 .d3,
+#clock .digits div.d0111011 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111100 .d5,
+#clock .digits div.d0111100 .d4,
+#clock .digits div.d0111100 .d3,
+#clock .digits div.d0111100 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111101 .d7,
+#clock .digits div.d0111101 .d5,
+#clock .digits div.d0111101 .d4,
+#clock .digits div.d0111101 .d3,
+#clock .digits div.d0111101 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111110 .d6,
+#clock .digits div.d0111110 .d5,
+#clock .digits div.d0111110 .d4,
+#clock .digits div.d0111110 .d3,
+#clock .digits div.d0111110 .d2{
+opacity:0;
+}
+
+#clock .digits div.d0111111 .d7,
+#clock .digits div.d0111111 .d6,
+#clock .digits div.d0111111 .d5,
+#clock .digits div.d0111111 .d4,
+#clock .digits div.d0111111 .d3,
+#clock .digits div.d0111111 .d2{
+opacity:0;
+}
+
+#clock .digits div.d1000000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000001 .d7,
+#clock .digits div.d1000001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000010 .d6,
+#clock .digits div.d1000010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000011 .d7,
+#clock .digits div.d1000011 .d6,
+#clock .digits div.d1000011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000100 .d5,
+#clock .digits div.d1000100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000101 .d7,
+#clock .digits div.d1000101 .d5,
+#clock .digits div.d1000101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000110 .d6,
+#clock .digits div.d1000110 .d5,
+#clock .digits div.d1000110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1000111 .d7,
+#clock .digits div.d1000111 .d6,
+#clock .digits div.d1000111 .d5,
+#clock .digits div.d1000111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001000 .d4,
+#clock .digits div.d1001000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001001 .d7,
+#clock .digits div.d1001001 .d4,
+#clock .digits div.d1001001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001010 .d6,
+#clock .digits div.d1001010 .d4,
+#clock .digits div.d1001010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001011 .d7,
+#clock .digits div.d1001011 .d6,
+#clock .digits div.d1001011 .d4,
+#clock .digits div.d1001011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001100 .d5,
+#clock .digits div.d1001100 .d4,
+#clock .digits div.d1001100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001101 .d7,
+#clock .digits div.d1001101 .d5,
+#clock .digits div.d1001101 .d4,
+#clock .digits div.d1001101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001110 .d6,
+#clock .digits div.d1001110 .d5,
+#clock .digits div.d1001110 .d4,
+#clock .digits div.d1001110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1001111 .d7,
+#clock .digits div.d1001111 .d6,
+#clock .digits div.d1001111 .d5,
+#clock .digits div.d1001111 .d4,
+#clock .digits div.d1001111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010000 .d3,
+#clock .digits div.d1010000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010001 .d7,
+#clock .digits div.d1010001 .d3,
+#clock .digits div.d1010001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010010 .d6,
+#clock .digits div.d1010010 .d3,
+#clock .digits div.d1010010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010011 .d7,
+#clock .digits div.d1010011 .d6,
+#clock .digits div.d1010011 .d3,
+#clock .digits div.d1010011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010100 .d5,
+#clock .digits div.d1010100 .d3,
+#clock .digits div.d1010100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010101 .d7,
+#clock .digits div.d1010101 .d5,
+#clock .digits div.d1010101 .d3,
+#clock .digits div.d1010101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010110 .d6,
+#clock .digits div.d1010110 .d5,
+#clock .digits div.d1010110 .d3,
+#clock .digits div.d1010110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1010111 .d7,
+#clock .digits div.d1010111 .d6,
+#clock .digits div.d1010111 .d5,
+#clock .digits div.d1010111 .d3,
+#clock .digits div.d1010111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011000 .d4,
+#clock .digits div.d1011000 .d3,
+#clock .digits div.d1011000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011001 .d7,
+#clock .digits div.d1011001 .d4,
+#clock .digits div.d1011001 .d3,
+#clock .digits div.d1011001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011010 .d6,
+#clock .digits div.d1011010 .d4,
+#clock .digits div.d1011010 .d3,
+#clock .digits div.d1011010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011011 .d7,
+#clock .digits div.d1011011 .d6,
+#clock .digits div.d1011011 .d4,
+#clock .digits div.d1011011 .d3,
+#clock .digits div.d1011011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011100 .d5,
+#clock .digits div.d1011100 .d4,
+#clock .digits div.d1011100 .d3,
+#clock .digits div.d1011100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011101 .d7,
+#clock .digits div.d1011101 .d5,
+#clock .digits div.d1011101 .d4,
+#clock .digits div.d1011101 .d3,
+#clock .digits div.d1011101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011110 .d6,
+#clock .digits div.d1011110 .d5,
+#clock .digits div.d1011110 .d4,
+#clock .digits div.d1011110 .d3,
+#clock .digits div.d1011110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1011111 .d7,
+#clock .digits div.d1011111 .d6,
+#clock .digits div.d1011111 .d5,
+#clock .digits div.d1011111 .d4,
+#clock .digits div.d1011111 .d3,
+#clock .digits div.d1011111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100000 .d2,
+#clock .digits div.d1100000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100001 .d7,
+#clock .digits div.d1100001 .d2,
+#clock .digits div.d1100001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100010 .d6,
+#clock .digits div.d1100010 .d2,
+#clock .digits div.d1100010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100011 .d7,
+#clock .digits div.d1100011 .d6,
+#clock .digits div.d1100011 .d2,
+#clock .digits div.d1100011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100100 .d5,
+#clock .digits div.d1100100 .d2,
+#clock .digits div.d1100100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100101 .d7,
+#clock .digits div.d1100101 .d5,
+#clock .digits div.d1100101 .d2,
+#clock .digits div.d1100101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100110 .d6,
+#clock .digits div.d1100110 .d5,
+#clock .digits div.d1100110 .d2,
+#clock .digits div.d1100110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1100111 .d7,
+#clock .digits div.d1100111 .d6,
+#clock .digits div.d1100111 .d5,
+#clock .digits div.d1100111 .d2,
+#clock .digits div.d1100111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101000 .d4,
+#clock .digits div.d1101000 .d2,
+#clock .digits div.d1101000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101001 .d7,
+#clock .digits div.d1101001 .d4,
+#clock .digits div.d1101001 .d2,
+#clock .digits div.d1101001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101010 .d6,
+#clock .digits div.d1101010 .d4,
+#clock .digits div.d1101010 .d2,
+#clock .digits div.d1101010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101011 .d7,
+#clock .digits div.d1101011 .d6,
+#clock .digits div.d1101011 .d4,
+#clock .digits div.d1101011 .d2,
+#clock .digits div.d1101011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101100 .d5,
+#clock .digits div.d1101100 .d4,
+#clock .digits div.d1101100 .d2,
+#clock .digits div.d1101100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101101 .d7,
+#clock .digits div.d1101101 .d5,
+#clock .digits div.d1101101 .d4,
+#clock .digits div.d1101101 .d2,
+#clock .digits div.d1101101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101110 .d6,
+#clock .digits div.d1101110 .d5,
+#clock .digits div.d1101110 .d4,
+#clock .digits div.d1101110 .d2,
+#clock .digits div.d1101110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1101111 .d7,
+#clock .digits div.d1101111 .d6,
+#clock .digits div.d1101111 .d5,
+#clock .digits div.d1101111 .d4,
+#clock .digits div.d1101111 .d2,
+#clock .digits div.d1101111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110000 .d3,
+#clock .digits div.d1110000 .d2,
+#clock .digits div.d1110000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110001 .d7,
+#clock .digits div.d1110001 .d3,
+#clock .digits div.d1110001 .d2,
+#clock .digits div.d1110001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110010 .d6,
+#clock .digits div.d1110010 .d3,
+#clock .digits div.d1110010 .d2,
+#clock .digits div.d1110010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110011 .d7,
+#clock .digits div.d1110011 .d6,
+#clock .digits div.d1110011 .d3,
+#clock .digits div.d1110011 .d2,
+#clock .digits div.d1110011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110100 .d5,
+#clock .digits div.d1110100 .d3,
+#clock .digits div.d1110100 .d2,
+#clock .digits div.d1110100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110101 .d7,
+#clock .digits div.d1110101 .d5,
+#clock .digits div.d1110101 .d3,
+#clock .digits div.d1110101 .d2,
+#clock .digits div.d1110101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110110 .d6,
+#clock .digits div.d1110110 .d5,
+#clock .digits div.d1110110 .d3,
+#clock .digits div.d1110110 .d2,
+#clock .digits div.d1110110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1110111 .d7,
+#clock .digits div.d1110111 .d6,
+#clock .digits div.d1110111 .d5,
+#clock .digits div.d1110111 .d3,
+#clock .digits div.d1110111 .d2,
+#clock .digits div.d1110111 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111000 .d4,
+#clock .digits div.d1111000 .d3,
+#clock .digits div.d1111000 .d2,
+#clock .digits div.d1111000 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111001 .d7,
+#clock .digits div.d1111001 .d4,
+#clock .digits div.d1111001 .d3,
+#clock .digits div.d1111001 .d2,
+#clock .digits div.d1111001 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111010 .d6,
+#clock .digits div.d1111010 .d4,
+#clock .digits div.d1111010 .d3,
+#clock .digits div.d1111010 .d2,
+#clock .digits div.d1111010 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111011 .d7,
+#clock .digits div.d1111011 .d6,
+#clock .digits div.d1111011 .d4,
+#clock .digits div.d1111011 .d3,
+#clock .digits div.d1111011 .d2,
+#clock .digits div.d1111011 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111100 .d5,
+#clock .digits div.d1111100 .d4,
+#clock .digits div.d1111100 .d3,
+#clock .digits div.d1111100 .d2,
+#clock .digits div.d1111100 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111101 .d7,
+#clock .digits div.d1111101 .d5,
+#clock .digits div.d1111101 .d4,
+#clock .digits div.d1111101 .d3,
+#clock .digits div.d1111101 .d2,
+#clock .digits div.d1111101 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111110 .d6,
+#clock .digits div.d1111110 .d5,
+#clock .digits div.d1111110 .d4,
+#clock .digits div.d1111110 .d3,
+#clock .digits div.d1111110 .d2,
+#clock .digits div.d1111110 .d1{
+opacity:0;
+}
+
+#clock .digits div.d1111111 .d7,
+#clock .digits div.d1111111 .d6,
+#clock .digits div.d1111111 .d5,
+#clock .digits div.d1111111 .d4,
+#clock .digits div.d1111111 .d3,
+#clock .digits div.d1111111 .d2,
+#clock .digits div.d1111111 .d1{
+opacity:0;
+}
+

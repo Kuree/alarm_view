@@ -21,6 +21,295 @@
              event.preventDefault();
         };
     </script>
+    <link href="/static/clock.css" rel="stylesheet" />
+    <style>
+        #clock{
+
+        width:370px;
+
+        padding:40px;
+
+        margin:200px auto 60px;
+
+        position:relative;
+
+    }
+
+
+
+        #clock:after{
+
+        content:'';
+
+        position:absolute;
+
+        width:400px;
+
+        height:20px;
+
+        border-radius:100%;
+
+        left:50%;
+
+        margin-left:-200px;
+
+        bottom:2px;
+
+        z-index:-1;
+
+        }   
+
+
+
+
+
+        #clock .display{
+
+        text-align:center;
+
+        padding: 40px 20px 20px;
+
+        border-radius:6px;
+
+        position:relative;
+
+        height: 54px;
+
+        }
+
+    /*-------------------------
+
+        Light color theme
+
+    --------------------------*/
+
+
+
+
+
+#clock.light{
+
+        background-color:#f3f3f3;
+
+        color:#272e38;
+
+    }
+
+
+
+#clock.light:after{
+
+        box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    }
+
+
+
+#clock.light .digits div span{
+
+        background-color:#272e38;
+
+        border-color:#272e38;   
+
+    }
+
+
+
+#clock.light .digits div.dots:before,
+
+#clock.light .digits div.dots:after{
+
+        background-color:#272e38;
+
+    }
+
+
+
+#clock.light .alarm{
+
+        background:url('/static/alarm_light.jpg');
+
+    }
+
+
+
+#clock.light .display{
+
+        background-color:#dddddd;
+
+        box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
+
+    }
+
+#clock .alarm{
+
+    width:16px;
+
+    height:16px;
+
+    bottom:20px;
+
+    background:url('/static/alarm_light.jpg');
+
+    position:absolute;
+
+    opacity:0.2;
+
+}
+
+
+
+#clock .alarm.active{
+
+    opacity:1;
+
+}
+
+
+/*-------------------------
+
+    The Digits
+
+--------------------------*/
+
+
+
+
+
+#clock .digits div{
+
+    text-align:left;
+
+    position:relative;
+
+    width: 28px;
+
+    height:50px;
+
+    display:inline-block;
+
+    margin:0 4px;
+
+}
+
+
+
+#clock .digits div span{
+
+    opacity:1;
+
+    position:absolute;
+
+
+
+    -webkit-transition:0.25s;
+
+    -moz-transition:0.25s;
+
+    transition:0.25s;
+
+}
+
+
+
+#clock .digits div span:before,
+
+#clock .digits div span:after{
+
+    content:'';
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    border:5px solid transparent;
+
+}
+
+
+
+#clock .digits .d1{         height:5px;width:16px;top:0;left:6px;}
+
+#clock .digits .d1:before{  border-width:0 5px 5px 0;border-right-color:inherit;left:-5px;}
+
+#clock .digits .d1:after{   border-width:0 0 5px 5px;border-left-color:inherit;right:-5px;}
+
+
+
+#clock .digits .d7{         height:5px;width:16px;top:24px;left:6px;}
+
+#clock .digits .d7:before{  border-width:3px 4px 2px;border-right-color:inherit;left:-8px;}
+
+#clock .digits .d7:after{   border-width:3px 4px 2px;border-left-color:inherit;right:-8px;}
+
+
+
+#clock .digits .d4{         height:5px;width:16px;top:48px;left:6px;}
+
+#clock .digits .d4:before{  border-width:5px 5px 0 0;border-right-color:inherit;left:-5px;}
+
+#clock .digits .d4:after{   border-width:5px 0 0 5px;border-left-color:inherit;right:-5px;}
+
+
+
+#clock .digits .d6{         width:5px;height:14px;top:7px;left:0;}
+
+#clock .digits .d6:before{  border-width:0 5px 5px 0;border-bottom-color:inherit;top:-5px;}
+
+#clock .digits .d6:after{   border-width:0 0 5px 5px;border-left-color:inherit;bottom:-5px;}
+
+
+
+#clock .digits .d2{         width:5px;height:14px;top:7px;right:0;}
+
+#clock .digits .d2:before{  border-width:0 0 5px 5px;border-bottom-color:inherit;top:-5px;}
+
+#clock .digits .d2:after{   border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
+
+
+
+#clock .digits .d5{         width:5px;height:14px;top:32px;left:0;}
+
+#clock .digits .d5:before{  border-width:0 5px 5px 0;border-bottom-color:inherit;top:-5px;}
+
+#clock .digits .d5:after{   border-width:0 0 5px 5px;border-left-color:inherit;bottom:-5px;}
+
+
+
+#clock .digits .d3{         width:5px;height:14px;top:32px;right:0;}
+
+#clock .digits .d3:before{  border-width:0 0 5px 5px;border-bottom-color:inherit;top:-5px;}
+
+#clock .digits .d3:after{   border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
+
+
+
+/*-------------------------
+
+        AM/PM
+
+--------------------------*/
+
+
+
+
+
+#clock .ampm{
+
+    position:absolute;
+
+    bottom:20px;
+
+    right:20px;
+
+    font-size:12px;
+
+}
+
+    </style>
+
   </head>
   <body>
   
@@ -74,17 +363,28 @@
         {% endif %}
 	      
 	      <br>
-	      
-	      {% for dig in digits %}
-	      	<img src="/static/{{dig}}.png">
-	      {% endfor %}
+	   
+         <div id="clock" class="light">
+            <div class="display">
+                {% if isAM == 1 %}
+                    <div class="ampm">AM</div>
+                {% elif isAM == 0 %}
+                    <div class="ampm">PM</div>
+                {% endif %}
+
+                {% if alarm == 1 %}
+                    <div class="alarm" style="opacity:1"></div>
+                {% else %}
+                    <div class="alarm" style="opacity: 0.2"></div>
+                {% endif %}
+                <div class="digits">
+                    {% for dig in digits %}
+                    <div class="d{{dig}}"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span><span class="d6"></span><span class="d7"></span></div> 
+                    {% endfor %}
+                </div>
+            </div>
+        </div> 
         
-        {% if isAM == 1 %}
-          <img src="/static/0001000.png" height = "200">
-        {% elif isAM == 0 %}
-          <img src="/static/0011000.png" height = "200">
-        {% endif %}
-	      
 	      <br>
 	      
 	      <p>
